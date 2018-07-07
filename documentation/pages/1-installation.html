@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <title>Installation | AppUI Documentation</title>
+
+        <!-- Meta -->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="favicon.ico" />
+
+        <!-- Google fonts -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:100,300,400,500%7CRoboto+Slab:300,400%7CRoboto+Mono:300" />
+
+        <!--Icon fonts -->
+        <link rel="stylesheet" href="../assets/css/font-awesome.css" />
+
+        <!-- CSS Files -->
+
+        <!-- Core CSS -->
+        <link rel="stylesheet" href="../assets/css/bootstrap.css" />
+        <link rel="stylesheet" href="../assets/css/css/docs.css" />
+        <link rel="stylesheet" href="../assets/js/plugins/prism/prism.css" />
+        <link rel="stylesheet" href="../assets/css/style.css" />
+        <!-- End CSS files -->
+    </head>
+
+    <body class="container">
+
+        <!-- Header -->
+        <header id="site-header">
+            <nav class="main-nav container">
+                <div class="main-nav-logo">
+                    <a href="#"><img class="img-responsive" src="../img/logo.png" alt="" /></a>
+                </div>
+                <div class="main-nav-button"> <a href="https://shapebootstrap.net/item/1525731-appui-admin-frontend-template/?ref=rustheme" target="_blank" class="btn btn-default">Purchase another license</a> </div>
+                <div class="main-nav-button"> <a href="mailto:rustheme@mail.com?subject=Support%20request%20for%20AppUI%20template" target="_blank" class="btn btn-success">Contact an author</a> </div>
+            </nav>
+        </header>
+        <!-- End header -->
+
+        <!-- Sidebar -->
+        <nav class="page-wrap">
+            <!-- Collapsible Navigation (using Bootstrap collapse functionality) -->
+            <button class="btn btn-success btn-block visible-md visible-sm visible-xs m-y" data-toggle="collapse" data-target="#nav" type="button">Navigation</button>
+            <div class="collapse navbar-collapse" id="nav">
+                <div class="aside" id="sidebar">
+                    <div class="aside-header">
+                        <h1>AppUI</h1>
+                        <small class="text-muted">Template Documentation</small>
+                    </div>
+
+                    <ul class="list-unstyled">
+                        <li><a href="../index.html">Overview</a></li>
+                        <li><a href="../pages/1-installation.html">Installation</a></li>
+                        <li><a href="../pages/2-gulp.html">Gulp</a></li>
+                        <li><a href="../pages/3-html-nunjucks.html">HTML / Nunjucks</a></li>
+                        <li><a href="../pages/4-css-sass.html">CSS / Sass</a></li>
+                        <li><a href="../pages/5-js.html">JavaScript</a></li>
+                        <li><a href="../pages/6-changelog.html">Changelog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- End Sidebar -->
+
+        <main class="content">
+            <article class="container-full">
+
+                <div id="installation" class="tile">
+                    <div class="tile-content">
+                        <h1>Installation</h1>
+
+                        <p>For compiling Sass and using Nunjucks templating language we need Node.js (cross-platform runtime environment) and NPM installed on our machine. If you're not familiar with Node.js don't worry - you don't need to be a Node.js developer.
+                            Basically there are just a few commands you will use in AppUI template. You will type commands in command line interface (CLI) rather than using a GUI, but there's nothing complex.</p>
+
+                        <h2>Step 1: Install Node.js</h2>
+                        <p>You can download Node.js for Windows, Mac and Linux at <a href="http://nodejs.org/" target="_blank" rel="nofollow">nodejs.org</a>. Install it.</p>
+                        <p><small>Please refer to official <a href="https://nodejs.org/en/docs/" target="_blank" rel="nofollow">Node documentation</a> if you need more information about Node.js.<br />For begginers this tutorial may be helpful: <a href="http://blog.modulus.io/absolute-beginners-guide-to-nodejs" target="_blank" rel="nofollow">An Absolute Beginner's Guide to Node.js</a>.</small></p>
+
+                        <h2>Step 2: Install Gulp and required dependencies</h2>
+                        <p class="m-b-md">Once you have Node.js installed, open a command prompt and navigate to your project folder, e.g.:</p>
+                        <pre class="language-bash"><code class="language-bash">cd ~/projects/appui/src</code></pre>
+
+                        <div class="m-b-md"></div>
+
+                        <p>The actual location of project folder will differ across systems - ensure you're in the correct directory by typing <code>dir</code> on Windows or <code>ls</code> on Mac/Linux.</p>
+
+                        <p class="m-b-md">Then, we must install all dependencies defined in <code>package.json</code> (gulp, gulp plugins and other node modules) with <code>npm install</code> command (add prefix sudo in Mac, if necessary), so type this:</p>
+                        <pre class="language-bash"><code class="language-bash">npm install</code></pre>
+
+                        <div class="m-b-md"></div>
+
+                        <p>Wait till installation will be completed - you will know it when your CLI will return your project folder.</p>
+                        <p>If dependencies and plugins were installed without errors you can step forward to customizing <a href="../pages/2-gulp.html">Gulpfile.js</a> which will help you with the customization process.</p>
+                    </div>
+                </div>
+
+            </article>
+        </main>
+        <!-- End content -->
+
+        <!-- Core JS -->
+        <script type="text/javascript" src="../assets/js/core/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="../assets/js/core/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="../assets/js/core/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../assets/js/core/smoothScroll.js"></script>
+        <script type="text/javascript" src="../assets/js/core/back-to-top.js"></script>
+
+        <!-- Js Plugins -->
+        <script type="text/javascript" src="../assets/js/plugins/prism/prism.js"></script>
+
+        <script>
+            $(function()
+            {
+                $('a[href*=#scroll_]:not([href=#scroll_])').click(function()
+                {
+                    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname)
+                    {
+                        var target = $(this.hash);
+                        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                        if (target.length)
+                        {
+                            $('html, body').animate(
+                            {
+                                scrollTop: target.offset().top
+                            }, 1000);
+                            return false;
+                        }
+                    }
+                });
+            });
+        </script>
+
+    </body>
+
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <title>JavaScript | AppUI Documentation</title>
+
+        <!-- Meta -->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="favicon.ico" />
+
+        <!-- Google fonts -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:100,300,400,500%7CRoboto+Slab:300,400%7CRoboto+Mono:300" />
+
+        <!--Icon fonts -->
+        <link rel="stylesheet" href="../assets/css/font-awesome.css" />
+
+        <!-- CSS Files -->
+
+        <!-- Core CSS -->
+        <link rel="stylesheet" href="../assets/css/bootstrap.css" />
+        <link rel="stylesheet" href="../assets/css/css/docs.css" />
+        <link rel="stylesheet" href="../assets/js/plugins/prism/prism.css" />
+        <link rel="stylesheet" href="../assets/css/style.css" />
+        <!-- End CSS files -->
+    </head>
+
+    <body class="container">
+
+        <!-- Header -->
+        <header id="site-header">
+            <nav class="main-nav container">
+                <div class="main-nav-logo">
+                    <a href="#"><img class="img-responsive" src="../img/logo.png" alt="" /></a>
+                </div>
+                <div class="main-nav-button"> <a href="https://shapebootstrap.net/item/1525731-appui-admin-frontend-template/?ref=rustheme" target="_blank" class="btn btn-default">Purchase another license</a> </div>
+                <div class="main-nav-button"> <a href="mailto:rustheme@mail.com?subject=Support%20request%20for%20AppUI%20template" target="_blank" class="btn btn-success">Contact an author</a> </div>
+            </nav>
+        </header>
+        <!-- End header -->
+
+        <!-- Sidebar -->
+        <nav class="page-wrap">
+            <!-- Collapsible Navigation (using Bootstrap collapse functionality) -->
+            <button class="btn btn-success btn-block visible-md visible-sm visible-xs m-y" data-toggle="collapse" data-target="#nav" type="button">Navigation</button>
+            <div class="collapse navbar-collapse" id="nav">
+                <div class="aside" id="sidebar">
+                    <div class="aside-header">
+                        <h1>AppUI</h1>
+                        <small class="text-muted">Template Documentation</small>
+                    </div>
+
+                    <ul class="list-unstyled">
+                        <li><a href="../index.html">Overview</a></li>
+                        <li><a href="../pages/1-installation.html">Installation</a></li>
+                        <li><a href="../pages/2-gulp.html">Gulp</a></li>
+                        <li><a href="../pages/3-html-nunjucks.html">HTML / Nunjucks</a></li>
+                        <li><a href="../pages/4-css-sass.html">CSS / Sass</a></li>
+                        <li><a href="../pages/5-js.html">JavaScript</a></li>
+                        <li><a href="../pages/6-changelog.html">Changelog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- End Sidebar -->
+
+        <main class="content">
+            <article class="container-full">
+
+                <!-- JavaScript initialization -->
+                <div id="scroll_js">
+                    <h1>JavaScript</h1>
+
+                    <p>AppUI uses jQuery, Bootstrap JS framework as well as some other vital third-party jQuery plugins at its core. It also utilizes many third-party plugins which you can include per page if you need them.</p>
+
+                    <div class="clearfix m-b-md"></div>
+
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th style="width: 25%;">Plugin</th>
+                                    <th style="width: 25%;">Used on pages</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="http://getbootstrap.com/javascript" target="_blank">Bootstrap</a></td>
+                                    <td>All</td>
+                                    <td>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.</td>
+                                </tr>
+
+                                <tr>
+                                    <td><a href="http://jquery.com/" target="_blank">jQuery</a></td>
+                                    <td>All</td>
+                                    <td>jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across
+                                        a multitude of browsers.</td>
+                                </tr>
+
+                                <tr>
+                                    <td><a href="http://mjolnic.github.io/bootstrap-colorpicker" target="_blank">Bootstrap Colorpicker</a></td>
+                                    <td><code>base_forms_pickers_select.html</code></td>
+                                    <td>Fancy and customizable colorpicker plugin for Twitter Bootstrap.</td>
+                                </tr>
+
+                                <tr>
+                                    <td><a href="https://github.com/eternicode/bootstrap-datepicker" target="_blank">Bootstrap Datepicker</a></td>
+                                    <td><code>base_forms_pickers_select.html</code></td>
+                                    <td>A datepicker for Twitter Bootstrap.</td>
+                                </tr>
+
+                                <tr>
+                                    <td><a href="https://github.com/mouse0270/bootstrap-growl" target="_blank">Bootstrap Notify</a></td>
+                                    <td><code>base_ui_alerts_notify.html</code></td>
+                                    <td>Turns standard Bootstrap alerts into "Growl-like" notifications.</td>
+                                </tr>
+
+                                <tr>
+                                    <td><a href="http://github.com/VinceG/twitter-bootstrap-wizard" target="_blank">Bootstrap Wizard</a></td>
+                                    <td><code>base_forms_wizard.html</code></td>
+                                    <td>This twitter bootstrap plugin builds a wizard out of a formatter tabbable structure.</td>
+                                </tr>
+
+                                <tr>
+                                    <td><a href="http://chartjs.org/" target="_blank">Chartjs</a></td>
+                                    <td><code>index.html</code> <br /> <code>base_js_charts_chartjs.html</code></td>
+                                    <td>Simple yet flexible JavaScript charting for designers & developers.</td>
+                                </tr>
+
+                                <tr>
+                                    <td><a href="https://www.datatables.net/" target="_blank">Datatables</a></td>
+                                    <td><code>base_tables_datatables.html</code></td>
+                                    <td>DataTables is a plug-in for the jQuery Javascript library. It is a highly flexible tool, based upon the foundations of progressive enhancement, and will add advanced interaction controls to any HTML table.</td>
+                                </tr>
+
+                                <tr>
+                                    <td><a href="http://www.dropzonejs.com/" target="_blank">Dropzonejs</a></td>
+                                    <td><code>base_forms_pickers_select.html</code></td>
+                                    <td>DropzoneJS is an open source library that provides drag'n'drop file uploads with image previews.</td>
+                                </tr>
+
+                                <tr>
+                                    <td><a href="http://www.flotcharts.org/" target="_blank">Flot</a></td>
+                                    <td><code>base_js_charts_flot.html</code></td>
+                                    <td>Flot is a pure JavaScript plotting library for jQuery, with a focus on simple usage, attractive looks and interactive features.</td>
+                                </tr>
+
+                                <tr>
+                                    <td><a href="https://hpneo.github.io/gmaps/" target="_blank">gmaps.js</a></td>
+                                    <td><code>base_js_maps.html</code></td>
+                                    <td>gmaps.js allows you to use the potential of Google Maps in a simple way.</td>
+                                </tr>
+
+                                <tr>
+                                    <td><a href="https://highlightjs.org/" target="_blank">highlight.js</a></td>
+                                    <td><code>base_js_syntax_highlight.html</code></td>
+                                    <td>Syntax highlighting for the Web</td>
+                                </tr>
+
+                                <tr>
+                                    <td><a href="https://github.com/xoxco/jQuery-Tags-Input" target="_blank">jQuery Tags Input</a></td>
+                                    <td><code>base_forms_pickers_select.html</code></td>
+                                    <td>Magically convert a simple text input into a cool tag list with this jQuery plugin.</td>
+                                </tr>
+
+                                <tr>
+                                    <td><a href="http://jqueryui.com" target="_blank">jQuery UI</a></td>
+                                    <td><code>base_js_draggable.html</code></td>
+                                    <td>jQuery UI is a curated set of user interface interactions, effects, widgets, and themes built on top of the jQuery JavaScript Library.</td>
+                                </tr>
+
+                                <tr>
+                                    <td><a href="http://jqueryvalidation.org/" target="_blank">jQuery Validation</a></td>
+                                    <td><code>base_forms_validation.html</code></td>
+                                    <td>This jQuery plugin makes simple clientside form validation easy, whilst still offering plenty of customization options.</td>
+                                </tr>
+
+                                <tr>
+                                    <td><a href="http://dimsemenov.com/plugins/magnific-popup/" target="_blank">Magnific popup</a></td>
+                                    <td>-</td>
+                                    <td>Magnific Popup is a responsive lightbox & dialog script with focus on performance and providing best experience for user with any device.</td>
+                                </tr>
+
+                                <tr>
+                                    <td><a href="http://digitalbush.com/projects/masked-input-plugin/" target="_blank">Masked Input</a></td>
+                                    <td><code>base_forms_pickers_select.html</code></td>
+                                    <td>This plugin allows a user to more easily enter fixed width input where you would like them to enter the data in a certain format (dates,phone numbers, etc).</td>
+                                </tr>
+
+                                <tr>
+                                    <td><a href="https://select2.github.io/" target="_blank">Select2</a></td>
+                                    <td><code>base_forms_pickers_select.html</code></td>
+                                    <td>The jQuery replacement for select boxes.</td>
+                                </tr>
+
+                                <tr>
+                                    <td><a href="http://kenwheeler.github.io/slick/" target="_blank">Slick slider</a></td>
+                                    <td><code>base_js_sliders.html</code><br /> <code>base_ui_widgets.html</code></td>
+                                    <td><cite>"The last carousel you'll ever need"</cite></td>
+                                </tr>
+
+                                <tr>
+                                    <td><a href="http://omnipotent.net/jquery.sparkline/" target="_blank">Sparkline</a></td>
+                                    <td><code>base_js_charts_sparkline.html</code></td>
+                                    <td>This jQuery plugin generates sparklines (small inline charts) directly in the browser using data supplied either inline in the HTML, or via javascript.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </article>
+        </main>
+        <!-- End content -->
+
+        <!-- Core JS -->
+        <script type="text/javascript" src="../assets/js/core/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="../assets/js/core/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="../assets/js/core/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../assets/js/core/smoothScroll.js"></script>
+        <script type="text/javascript" src="../assets/js/core/back-to-top.js"></script>
+
+        <!-- Js Plugins -->
+        <script type="text/javascript" src="../assets/js/plugins/prism/prism.js"></script>
+
+        <script>
+            $(function()
+            {
+                $('a[href*=#scroll_]:not([href=#scroll_])').click(function()
+                {
+                    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname)
+                    {
+                        var target = $(this.hash);
+                        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                        if (target.length)
+                        {
+                            $('html, body').animate(
+                            {
+                                scrollTop: target.offset().top
+                            }, 1000);
+                            return false;
+                        }
+                    }
+                });
+            });
+        </script>
+
+    </body>
+
+</html>

@@ -1,0 +1,13 @@
+/*
+App-custom.css
+Template name: AppUI
+Author: rustheme
+*/
+
+/*# sourceMappingURL=maps/app-custom.css.map */
+body {
+-moz-filter: grayscale(100%);
+-webkit-filter: grayscale(100%);
+filter: gray; /* IE6-9 */
+filter: grayscale(100%);
+}
